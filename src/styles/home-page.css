@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 130px;
+  }
+  
+  :root {
+    --displayBlur: none;
+    --displayForgotPassword: none;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    background: #faf7ff;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .headRect{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15dvw 0 15dvw;
+    top: 0;
+    left: 0;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: #FEFEFE;
+    border-bottom: 2px solid #d9d9d9;
+  }
+  
+  .headName{
+    font-size: 40px;
+    margin-right: 3vw;
+  }
+  
+  .itemCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 70vw;
+    font-size: 18px;
+  }
+  
+  .subHeads {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    margin-right: 3vw;
+    transition: 0.3s;
+  }
+  
+  .subHeads:after {
+    display: block;
+    content: '';
+    transition: transform 0.3s ease-out;
+    border-bottom: solid 3px #715AB0;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+  }
+  
+  .subHeads:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .signUpCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0);
+    min-width: 96px;
+    height: 46px;
+    border: 3px solid #715AB0;
+    color: #715AB0;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.4vw;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .signUpCont:hover {
+    background: #715AB0;
+    color: #FEFEFE;
+  }
+  
+  .splashCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
+    height: 70vh;
+  }
+  
+  .splash {
+    width: 40vw;
+  }
+  
+  .splashTextCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vw;
+    transform: translateX(10vw);
+    font-size: 1.5vw;
+  }
+
+  .splashTextCont h1 {
+    color: #1C1B1F;
+    font-weight: 500;
+  }
+  
+  span {
+    color: #715AB0;
+  }
+  
+  .subText {
+    margin-top: -15px;
+    font-weight: 600;
+    font-size: 2.4vw;
+  }
+  
+  .splashGetStarted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #715AB0;
+    height: 60px;
+    width: 180px;
+    border-radius: 5vw;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .splashGetStarted:hover {
+    background: #7e64c4;
+  }
+
+  .featuresCont {
+    display: flex;
+    width: 100vw;
+    height: 40vw;
+    margin: 50px 0px 50px 0px;
+    background: rgba(255, 0, 0, 0.192);
+  }
+  
+  .contactCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  
+  .contactBoxBack {
+    border-radius: 1vw;
+    box-shadow: 0px 15px 40px 0px #666666;
+  }
+  
+  .contactBoxCont {
+    position: absolute;
+    margin-top: 160px;
+    min-height: 560px;
+    width: 600px;
+  }
+  
+  .textContact {
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .textLabels {
+    margin-left: 60px;
+    font-size: 1.25vw;
+  }
+  
+  .textBoxes {
+    margin-left: 60px;
+    margin-bottom: 15px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    box-sizing: border-box;
+    width: 480px;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8vw;
+    border-radius: 0.5vw;
+    border: solid #c9c9c9;
+  }
+  
+  .Message {
+    height: 140px;
+    padding-top: 0.5vw;
+    padding-bottom: 0.4vw;
+  }
+  
+  .textBoxes:focus {
+    outline: none;
+  }
+  
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: 15px;
+    height: 50px;
+    width: 120px;
+    border-radius: 2vw;
+    cursor: pointer;
+    background: #715AB0;
+    color: #FEFEFE;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    font-size: 1.25vw;
+    transition: 0.2s;
+  }
+  
+  .submitButton:hover {
+    background: #7e64c4;
+  }
+  
+  .popUpCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 650px;
+  }
+  
+  .material-symbols-outlined {
+    position: absolute;
+    color: #1c1b1f;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  .leftCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    width: 360px;
+    background: #715AB0;
+    border-radius: 1vw 0 0 1vw;
+  }
+  
+  .leftCont h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FEFEFE;
+  }
+  
+  .leftCont p {
+    font-size: 18px;
+    color: #FEFEFE;
+  }
+  
+  .switchTypeButton {
+    margin: 40px;
+    width: 180px;
+    height: 50px;
+    background: #715AB0;
+    color: #FEFEFE;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #FEFEFE;
+    border-radius: 5vw;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .switchTypeButton:hover {
+    background: #FEFEFE;
+    color: #715AB0;
+  }
+  
+  .rightCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    width: 480px;
+    background: #FEFEFE;
+    border-radius: 0 1vw 1vw 0;
+  }
+  
+  .rightCont h1 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #715AB0;
+  }
+  
+  .socialsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 180px;
+  }
+  
+  .socialsCont a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #715AB0;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .socialsCont a:hover {
+    background: #7e64c4;
+  }
+
+  .icon {
+    transform: translate(5px, 5px);
+  }
+
+  .li {
+    transform: translate(10px, 10px);
+  }
+  
+  .rightCont p {
+    margin: 25px;
+    font-size: 18px;
+  }
+  
+  .emailIcon {
+    margin: 20px 305px 0px 0px;
+    color: #A9A9A9;
+  }
+  
+  .passwordIcon {
+    margin: 170px 305px 0px 0px;
+    color: #A9A9A9;
+  }
+  
+  .passwordVisibility {
+    margin: 170px 0px 0px 305px;
+    cursor: pointer;
+    color: #A9A9A9;
+  }
+  
+  .popUpTextCont {
+    width: 360px;
+    height: 50px;
+    background: #E8E8E8;
+    border-radius: 5vw;
+    border:solid #C9C9C9;
+    color: #1C1B1F;
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+  
+  .popUpTextCont:focus {
+    outline: none;
+  }
+  
+  .submitDetailsButton {
+    margin-top: 60px;
+    width: 180px;
+    height: 50px;
+    background: #715AB0;
+    color: #FEFEFE;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #715AB0;
+    border-radius: 5vw;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .submitDetailsButton:hover {
+    background: #7e64c4;
+  }
+  
+  .forgotPasswordButton {
+    position: absolute;
+    display: var(--displayForgotPassword);
+    margin-top: 255px;
+    cursor: pointer;
+  }
+  
+  .forgotPasswordButton:hover {
+    text-decoration: underline;
+  }
+  
+  .blur {
+    position: fixed;
+    display: var(--displayBlur);
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30,30,30,0.8);
+  }
+  
+  .closeIcon {
+    cursor: pointer;
+    margin-top: -600px;
+    margin-right: -430px;
+  }
+
+  .footerCont {
+    display: flex;
+    width: 100vw;
+    height: 250px;
+    margin-top: 50px;
+    background: rgba(255, 0, 0, 0.192);
+  }
