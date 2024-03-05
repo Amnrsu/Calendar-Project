@@ -15,6 +15,22 @@ body {
     --fc-highlight-color: rgba(0,0,0,0);
 }
 
+.pageTitle {
+    z-index: 1;
+    position: absolute;
+    margin: 10px 20px 0px 70px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #715AB0;
+}
+
+.createPrompt {
+    position: absolute;
+    width: 250px;
+    font-size: 24px;
+    margin: 425px 0px 0px 60px;
+}
+
 .calendar {
     margin: 10px 0px 0px 350px;
 }
@@ -41,19 +57,87 @@ body {
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     top: 0;
     left: 0;
+    padding: 80px 10px 10px 10px;
     width: 350px;
     height: 100%;
+    background: #faf7ff;
 }
 
 #titleInput {
-    height: 50px;
-    border: none;
+    box-sizing: border-box;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    background: #FEFEFE;
+    border: 3px solid #715AB0;
+    border-radius: 2vw;
+}
+
+.colorCont {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#color {
+    margin: 10px 0px 0px 20px;
+    border: 3px solid #715AB0;
+    border-radius: 0.5vw;
+    height: 40px;
+    width: 60px;
+}
+
+.timeframeCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.startCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.endCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#startDate {
+    padding: 4px;
+    border: 3px solid #715AB0;
+    border-radius: 1vw;
+}
+
+#startTime {
+    padding: 4px;
+    border: 3px solid #715AB0;
+    border-radius: 1vw;
+}
+
+#endDate {
+    padding: 4px;
+    border: 3px solid #715AB0;
+    border-radius: 1vw;
+}
+
+#endTime {
+    padding: 4px;
+    border: 3px solid #715AB0;
+    border-radius: 1vw;
 }
 
 #contentInput {
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
     height: 300px;
+    background: #FEFEFE;
+    border: 3px solid #715AB0;
+    border-radius: 1vw;
 }
 
 .optionsCont {
@@ -64,6 +148,34 @@ body {
     width: 100%;
 }
 
-.optionsCont button {
-    width: 100%;
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    margin-left: 115px;
+    border-radius: 2vw;
+    cursor: pointer;
+    color: #FEFEFE;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    font-size: 1.25vw;
+    transition: 0.2s;
+}
+
+#validate {
+    background: #715AB0;
+}
+
+#validate:hover {
+    background: #7e64c4;
+}
+
+#delete {
+    background: #ff0000;
+}
+
+#delete:hover {
+    background: #ff5a5a;
 }

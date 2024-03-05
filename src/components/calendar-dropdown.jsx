@@ -45,13 +45,21 @@ const CalendarDropdown = (props) => {
   return (
     <div id="event-popup-view" class="eventPopUpView">
         <input id="titleInput" type="text" value={title} onChange={(event) => setTitle(event.target.value)} />
-        <input id="color" type="color" value={color} onChange={(event) => setColor(event.target.value)} />
-        <div>
-          <input id="startDate" type="date" value={startDate} onChange={(event) => setStartDate(event.target.value)} />
-          <input id="startTime" type="time" value={startTime} onChange={(event) => setStartTime(event.target.value)} />
-          to
-          <input id="endDate" type="date" value={endDate} onChange={(event) => setEndDate(event.target.value)} />
-          <input id="endTime" type="time" value={endTime} onChange={(event) => setEndTime(event.target.value)} />
+        <div class="colorCont">
+          <p>Colour:</p>
+          <input id="color" type="color" value={color} onChange={(event) => setColor(event.target.value)} />
+        </div>
+        <div class="timeframeCont">
+          <div class="startCont">
+            <p>Start:</p>
+            <input id="startDate" type="date" value={startDate} onChange={(event) => setStartDate(event.target.value)} />
+            <input id="startTime" type="time" value={startTime} onChange={(event) => setStartTime(event.target.value)} />
+          </div>
+          <div class="endCont">
+            <p>End:</p>
+            <input id="endDate" type="date" value={endDate} onChange={(event) => setEndDate(event.target.value)} />
+            <input id="endTime" type="time" value={endTime} onChange={(event) => setEndTime(event.target.value)} />
+          </div>
         </div>
 
         <textarea id="contentInput" placeholder="Event description" value={content} onChange={(event) => setContent(event.target.value)}></textarea>

@@ -37,6 +37,8 @@ const CalendarComponent = () => {
 
   return (
     <>
+      <h1 class="pageTitle">Calendar</h1>
+      <p class="createPrompt">Create and select an event to start editing</p>
       <div class="calendar">
         <FullCalendar
           ref={calendarRef}
