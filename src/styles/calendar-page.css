@@ -2,18 +2,68 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background: #faf7ff;
+}
+
+:root {
+    --fc-today-bg-color: rgba(184, 158, 255, 0.15);
+    --fc-button-active-bg-color: #715AB0;
+    --fc-button-hover-border-color: rgba(0,0,0,0);
+    --fc-button-active-border-color: rgba(0,0,0,0);
+    --fc-button-border-color: #715AB0;
+    --fc-button-hover-bg-color: rgba(0,0,0,0);
+    --fc-highlight-color: rgba(0,0,0,0);
 }
 
 .calendar {
-    margin-left: 350px;
+    margin: 10px 0px 0px 350px;
 }
 
-.sidebarCont {
-    position: fixed;
+.fc .fc-button-primary{
+    background: #FEFEFE;
+    color: #000;
+    border: 3px solid #715AB0;
+    transition: 0.2s;
+  }
+  
+.fc .fc-button-primary:hover{
+    background: #7e64c4;
+}
+  
+  
+.fc .fc-button-primary:disabled{
+    background: #FFF;
+    color: #000;
+}
+
+.eventPopUpView {
+    position: absolute;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     top: 0;
     left: 0;
     width: 350px;
-    height: 100vh;
+    height: 100%;
+}
+
+#titleInput {
+    height: 50px;
+    border: none;
+}
+
+#contentInput {
+    height: 300px;
+}
+
+.optionsCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.optionsCont button {
+    width: 100%;
 }

@@ -68,7 +68,7 @@ const Modal = () => {
                     <input id="userEmail" class="popUpTextCont" type="email" placeholder="Email" /><span class="material-symbols-outlined emailIcon">mail</span><br />
                     <input id="userPassword" class="popUpTextCont" type="password" placeholder="Password" /><span class="material-symbols-outlined passwordIcon">lock</span><span onClick={togglePasswordVisibility} class="material-symbols-outlined passwordVisibility" id="visibilityToggle">visibility_off</span>
                     <a id="forgotPassword" class="forgotPasswordButton">Forgot Password?</a>
-                    <button id="submitDetails" class="submitDetailsButton" onClick={() => {navigate("/test")}}>Sign Up</button>
+                    <button id="submitDetails" class="submitDetailsButton" onClick={() => {navigate("/calendarPage")}}>Sign Up</button>
                 </div>
             </div>
         </div>

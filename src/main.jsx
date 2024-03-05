@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "test/",
+    path: "calendarPage/",
     element: <Calendar />,
   },
 ]);
